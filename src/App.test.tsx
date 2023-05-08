@@ -20,7 +20,7 @@ test("Checar se na array 'shoppingList' contém a string 'milk'", () => {
   expect(new Set(shoppingList)).toContain("milk");
 });
 
-test("Checar se o cachorro é um pug", async () => {
+test("Checar se a função 'dog()' retorna a palavra 'pug'", async () => {
   // Utilizando Promise:
   const mydog = await dog();
   expect(mydog).toBe("pug");
