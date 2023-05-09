@@ -1,12 +1,18 @@
 import { render, screen } from "@testing-library/react";
-import App from "./App";
-import { dog, fooBar, shoppingList, sum } from ".";
+import App from "../App";
+import { dog, fooBar, shoppingList, sum } from "..";
 describe("Todos os testes", () => {
   test("Checar se existe a string 'Learn React' no componente App.tsx", () => {
     // Importando um componente:
     render(<App />);
     const linkElement = screen.getByText(/learn react/i);
     expect(linkElement).toBeInTheDocument();
+  });
+
+  test("Checar se teve alterações no componente App", () => {
+    const { container } = render(<App />);
+    // Gerar snapshot:
+    expect(container).toMatchSnapshot();
   });
 
   test("Checar se 1 + 2 é igual a 3 com função", () => {
