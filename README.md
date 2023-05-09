@@ -35,7 +35,7 @@ yarn test
 npm test
 ```
 
-> Este passo precisa ser feito toda vez que rodar os testes
+> Este passo precisa ser feito toda vez que o usuário queira rodar os testes
 
 O teste irá rodar no terminal que for utilizado o comando 'yarn test'.
 
